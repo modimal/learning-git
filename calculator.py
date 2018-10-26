@@ -6,11 +6,12 @@ class Calculator:
     """Calculator"""
 
     @staticmethod
-    def add(x, y):
+    def addition(x, y):
         try:
             return float(x) + float(y)
         except ValueError as err:
             print("\nERROR: {}\n".format(err))
+            return False
 
     @staticmethod
     def division(x, y):
@@ -22,3 +23,12 @@ class Calculator:
         except ZeroDivisionError as err:
             print("\nERROR: {}\n".format(err))
             return False
+
+    @staticmethod
+    def subtraction(x, y):
+        try:
+            return float(x) - float(y)
+        except ValueError as err:
+            print("\nERROR: {}\n".format(err))
+            return False
+
