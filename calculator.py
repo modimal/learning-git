@@ -11,3 +11,14 @@ class Calculator:
             return float(x) + float(y)
         except ValueError as err:
             print("\nERROR: {}\n".format(err))
+
+    @staticmethod
+    def division(x, y):
+        try:
+            return float(x) / float(y)
+        except ValueError as err:
+            print("\nERROR: {}\n".format(err))
+            return False
+        except ZeroDivisionError as err:
+            print("\nERROR: {}\n".format(err))
+            return False
